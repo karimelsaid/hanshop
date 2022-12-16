@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 1000vh;
+}
+:root {
+  --color1: #04dabd;
+  --color2: #f87f05;
+  --color3: #ffe38f;
+  --color4: #f5f5f5;
+  --color5: #20ae13;
+  --transition: all 0.3s linear;
+  --backgroundImage: linear-gradient(to right, #04dabd, #f87f05);
+}
+h1 {
+  font-family: "Fredoka One", cursive;
+}
+
+header {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../image/header-img.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+header .container {
+  /* background-color: black; */
+  background-image: linear-gradient(330deg, var(--color1), black);
+  height: 100%;
+  opacity: 0.8;
+}
+header section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+header section div:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+header section div h1 {
+  color: var(--color4);
+  font-size: 3em;
+}
+header section div h1 span:nth-child(1) {
+  color: var(--color1);
+  font-weight: bold;
+}
+header section div h1 span:nth-child(2) {
+  color: var(--color2);
+  font-weight: bold;
+}
+header section div.khat {
+  width: 108px;
+  height: 2px;
+  background-image: var(--backgroundImage);
+  margin-left: auto;
+  margin-right: auto;
+}
+header section div p {
+  color: #ffe38f;
+  font-size: 2em;
+  margin: 20px;
+  font-family: "Tajawal", sans-serif;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+a{
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border-radius: 35px;
+  margin: 10px;
+    text-decoration: none;
+      color: var(--color4);
+}
+.a1 {
+  position: relative;
+  text-shadow: -3px 3px 3px black;
+  transition: var(--transition);
+  border: 2px solid var(--color4);
+}
+.a1:hover {
+  background-color: var(--color4);
+  color: var(--color2);
+  text-shadow: none;
+}
+.a2 {
+  color: var(--color2);
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border-radius: 35px;
+  margin: 10px;
+  position: relative;
+  text-shadow: 0px 3px 3px black;
+  transition: var(--transition);
+  border: 2px solid var(--color2);
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+.a2:hover {
+  background-color: var(--color2);
+  color: var(--color4);
+  text-shadow: none;
+}
+@media (max-width: 320px) {
+  .a1,
+  .a2 {
+    margin: 0;
+    padding: 10px 20px;
+  }
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!11 */
+.div2 {
+  background-color: #092b24;
+}
+.div2 .container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(292px, 200px));
+  place-items: center;
+  gap: 40px;
+  direction: rtl;
+  justify-content: center;
+}
+.div2 .type {
+  width: 300px;
+  height: 400px;
+  background-color: #fffefe1c;
+  border-radius: 20px;
+  outline: solid 1px;
+  outline-offset: -7px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 200px 150px 50px;
+  overflow: hidden;
+}
+.div2 .type1{
+  background-image: url(../image/زبون.jpg);
+ background-size: cover;
+ background-position: center;
+}
+.div2 .type article:nth-child(2){
+color: var(--color4);
+}
+.btn-div2{
+  background-image: var(--backgroundImage);
+}
+@media (max-width: 1347px) and (min-width: 720px) {
+  .div2 .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  .div2 .type {
+    width: 100%;
+  }
+}
+@media (max-width: 687px) and (min-width: 568px) {
+  .div2 .type {
+    width: 375px;
+  }
+}
+@media (max-width: 320px) {
+  .div2 .container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+  }
+  .div2 .type {
+    width: 250px;
+  }
+}
