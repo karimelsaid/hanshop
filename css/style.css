@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -137,17 +136,7 @@ a {
   direction: rtl;
   justify-content: center;
 }
-.div2 .type1 .container {
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/زبون.jpg);
-  background-position: 30%;
-  background-size: cover;
-}
 .div2 .type {
-  background-image: url(../image/زبون.jpg);
-  background-position: 30%;
-  background-size: cover;
   width: 300px;
   height: 400px;
   text-align: center;
@@ -159,12 +148,36 @@ a {
   box-shadow: 5px 5px 40px black;
 }
 .div2 .type .container {
+  height: 100%;
+  width: 100%;
   padding: 0;
+  display: flex;
+  background-position: 30%;
+  background-size: cover;
 }
-
-.div2 .type .container article {
+.div2 .type1 .container {
+  background-image: url(../image/زبون.jpg);
+}
+.div2 .type2 .container {
+  background-image: url(../image/مصمم.jpg);
+}
+.div2 .type3 .container {
+  background-image: url(../image/تاجر\ قطاعي.jpg);
+}
+.div2 .type4 .container {
+  background-image: url(../image/تاجر\ جمله.jpg);
+}
+.div2 .type .container article:nth-child(1) {
   display: grid;
-  grid-template-rows: 90% 10%;
+  align-content: end;
+  align-items: end;
+  width: 100%;
+  height: 40%;
+  background-image: linear-gradient(to top, #000000f1, transparent);
+}
+.div2 .type .container article:nth-child(2) {
+  display: none;
+  grid-template-rows: 80% 5% 15%;
   justify-items: center;
   width: 100%;
   height: 100%;
@@ -172,27 +185,16 @@ a {
   margin: 0;
   background-image: linear-gradient(to top, #000000e4, #000000cf);
 }
-
-.div2 .type .container article div {
+.div2 .type .container article div:nth-child(1) {
   color: var(--color4);
   display: grid;
-  grid-template-rows: 15% 15% 15% 15%;
+  grid-template-rows: 17.5% 17.5% 17.5% 17.5%;
   margin: 30px;
   text-align: right;
   justify-content: center;
   position: relative;
 }
-.div2 .type .container article {
-  display: grid;
-  align-content: end;
-  align-items: end;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  background-image: linear-gradient(to top, #000000f1, transparent);
-}
-.div2 .type .container article div h3::before {
+.div2 .type .container article div:nth-child(1) h3::before {
   position: absolute;
   content: "";
   border: 8px solid green;
@@ -205,40 +207,20 @@ a {
   -ms-transform: translate(100%);
   -o-transform: translate(100%);
 }
-.div2 .type .container article div a {
+.div2 .type .container article div:nth-child(2) a {
   background-color: green;
   transition: var(--transition);
 }
-.div2 .type .container article div a:hover {
+.div2 .type .container article div:nth-child(2) a:hover {
   background-color: rgb(5, 85, 5);
 }
-.div2 .type2 .container {
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/مصمم.jpg);
-  background-position: 30%;
-  background-size: cover;
-}
-.div2 .type3 .container {
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/تاجر\ قطاعي.jpg);
-  background-position: 30%;
-  background-size: cover;
-}
-.div2 .type4 .container {
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/تاجر\ جمله.jpg);
-  background-position: 30%;
-  background-size: cover;
-}
+
 .div2 .type article h2 {
   font-size: 40px;
   color: var(--color4);
   font-weight: bold;
 }
-.div2 .type article i {
+.div2 .type article:nth-child(1) i {
   background-image: var(--backgroundImage);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -250,14 +232,47 @@ a {
   animation-duration: 1.6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+     
+}
+.div2 .type article:nth-child(2) i {
+  background-image: var(--backgroundImage);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  margin: 10px;
+  color: #fffaf4;
+  cursor: pointer;
+   animation-name: chevron-up;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 @keyframes chevron-up {
   0% {
-    text-shadow: 0px 0px 3px var(--color1);
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -ms-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
   }
   100% {
-    text-shadow: 0px 0px 3px var(--color2);
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -ms-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
   }
+}
+
+.div2 .type article i:hover .div2 .type article:nth-child(2) {
+  display: none;
 }
 @media (min-width: 1347px) {
   .div2 .container {
