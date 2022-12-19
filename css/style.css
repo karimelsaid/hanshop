@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color1: #04dabd;
+  --color2: #f87f05;
+  --color3: #ffe38f;
+  --color4: #f5f5f5;
+  --color5: #20ae13;
+  --transition: all 0.3s linear;
+  --backgroundImage: linear-gradient(to right, #04dabd, #f87f05);
+}
+h1 {
+  font-family: "Fredoka One", cursive;
+}
+
+header {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../image/header-img.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+header .container {
+  /* background-color: black; */
+  background-image: linear-gradient(330deg, var(--color1), black);
+  height: 100%;
+  opacity: 0.8;
+}
+header section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+header section div:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+header section div h1 {
+  color: var(--color4);
+  font-size: 3em;
+}
+header section div h1 span:nth-child(1) {
+  color: var(--color1);
+  font-weight: bold;
+}
+header section div h1 span:nth-child(2) {
+  color: var(--color2);
+  font-weight: bold;
+}
+header section div.khat {
+  width: 108px;
+  height: 2px;
+  background-image: var(--backgroundImage);
+  margin-left: auto;
+  margin-right: auto;
+}
+header section div p {
+  color: #ffe38f;
+  font-size: 2em;
+  margin: 20px;
+  font-family: "Tajawal", sans-serif;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+a {
+  font-size: 1.2em;
+  padding: 10px 30px;
+  border-radius: 35px;
+  margin: 10px;
+  text-decoration: none;
+  color: var(--color4);
+  font-weight: bold;
+}
+.a1 {
+  position: relative;
+  transition: var(--transition);
+  border: 2px solid var(--color4);
+  background-color: var(--color4);
+  color: var(--color2);
+}
+.a2 {
+  color: var(--color2);
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 30px;
+  border-radius: 35px;
+  margin: 10px;
+  position: relative;
+  transition: var(--transition);
+  border: 2px solid var(--color2);
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  background-color: var(--color2);
+  color: var(--color4);
+}
+.a1:hover {
+  background-color: #d5cccc;
+  border: 2px solid #d5cccc;
+}
+.a2:hover {
+  background-color: #bd6002;
+  border: 2px solid #bd6002;
+}
+@media (max-width: 320px) {
+  .a1,
+  .a2 {
+    margin: 0;
+    padding: 10px 20px;
+  }
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!11 */
+.div2 {
+  background-color: #001216;
+}
+.div2 .container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(292px, 200px));
+  justify-items: center;
+  align-items: flex-end;
+  gap: 40px;
+  direction: rtl;
+  justify-content: center;
+}
+.div2 .type1 .container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/زبون.jpg);
+  background-position: 30%;
+  background-size: cover;
+}
+.div2 .type {
+  background-image: url(../image/زبون.jpg);
+  background-position: 30%;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(white, #ffffff) padding-box,
+    linear-gradient(to right, #04dabd, #f87f05) border-box;
+  box-shadow: 5px 5px 40px black;
+}
+.div2 .type .container {
+  padding: 0;
+}
+
+.div2 .type .container article {
+  display: grid;
+  grid-template-rows: 90% 10%;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to top, #000000e4, #000000cf);
+}
+
+.div2 .type .container article div {
+  color: var(--color4);
+  display: grid;
+  grid-template-rows: 15% 15% 15% 15%;
+  margin: 30px;
+  text-align: right;
+  justify-content: center;
+  position: relative;
+}
+.div2 .type .container article {
+  display: grid;
+  align-content: end;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to top, #000000f1, transparent);
+}
+.div2 .type .container article div h3::before {
+  position: absolute;
+  content: "";
+  border: 8px solid green;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: translate(100%);
+  -webkit-transform: translate(100%);
+  -moz-transform: translate(100%);
+  -ms-transform: translate(100%);
+  -o-transform: translate(100%);
+}
+.div2 .type .container article div a {
+  background-color: green;
+  transition: var(--transition);
+}
+.div2 .type .container article div a:hover {
+  background-color: rgb(5, 85, 5);
+}
+.div2 .type2 .container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/مصمم.jpg);
+  background-position: 30%;
+  background-size: cover;
+}
+.div2 .type3 .container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/تاجر\ قطاعي.jpg);
+  background-position: 30%;
+  background-size: cover;
+}
+.div2 .type4 .container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/تاجر\ جمله.jpg);
+  background-position: 30%;
+  background-size: cover;
+}
+.div2 .type article h2 {
+  font-size: 40px;
+  color: var(--color4);
+  font-weight: bold;
+}
+.div2 .type article i {
+  background-image: var(--backgroundImage);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  margin: 10px;
+  color: #fffaf4;
+  cursor: pointer;
+  animation-name: chevron-up;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes chevron-up {
+  0% {
+    text-shadow: 0px 0px 3px var(--color1);
+  }
+  100% {
+    text-shadow: 0px 0px 3px var(--color2);
+  }
+}
+@media (min-width: 1347px) {
+  .div2 .container {
+    grid-template-columns: repeat(auto-fill, minmax(282px, 200px));
+  }
+}
+@media (max-width: 1347px) and (min-width: 720px) {
+  .div2 .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  .div2 .type {
+    width: 100%;
+  }
+}
+@media (max-width: 687px) and (min-width: 568px) {
+  .div2 .type {
+    width: 375px;
+  }
+}
+@media (max-width: 320px) {
+  .div2 .container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+  }
+  .div2 .type {
+    width: 250px;
+  }
+}
+/* !!!!!!!!!!!!!!!!!! */
+.div-photo {
+  height: 70vh;
+  width: 100%;
+  background-color: #b9c0c1;
+}
+/*!!!!!!!!!!!!!!!!!! */
+.div-footer {
+  height: 50vh;
+  width: 100%;
+  background-color: #8bb6bf;
+}
