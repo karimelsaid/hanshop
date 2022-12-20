@@ -11,6 +11,17 @@ let on_type4 = document.getElementById("type4-article1");
 let off1_type4 = document.getElementById("type4-article2");
 let off1_type4_div = document.getElementById("type4-article2-div");
 
+function div1(){
+  on_type1.style.display = "grid";
+  off1_type1.style.display = "none";
+  on_type2.style.display = "grid";
+  off1_type2.style.display = "none";
+  on_type3.style.display = "grid";
+  off1_type3.style.display = "none";
+  on_type4.style.display = "grid";
+  off1_type4.style.display = "none";
+}
+
 function type1() {
   on_type1.style.display = "none";
   off1_type1.style.display = "grid";
