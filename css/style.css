@@ -177,7 +177,7 @@ a {
 }
 .div2 .type .container article:nth-child(2) {
   display: none;
-  grid-template-rows: 80% 5% 15%;
+  grid-template-rows: 90% 10%;
   justify-items: center;
   width: 100%;
   height: 100%;
@@ -193,6 +193,26 @@ a {
   text-align: right;
   justify-content: center;
   position: relative;
+  transition: var(--transition);
+  animation-name: topDiv;
+  animation-duration: 1.6s;
+  animation-timing-function: ease-out;
+}
+@keyframes topDiv {
+  0% {
+    transform: translate(0%, 50%);
+    -webkit-transform: translate(0%, 50%);
+    -moz-transform: translate(0%, 50%);
+    -ms-transform: translate(0%, 50%);
+    -o-transform: translate(0%, 50%);
+}
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
 }
 .div2 .type .container article div:nth-child(1) h3::before {
   position: absolute;
@@ -220,7 +240,7 @@ a {
   color: var(--color4);
   font-weight: bold;
 }
-.div2 .type article:nth-child(1) i {
+.div2 .type article i {
   background-image: var(--backgroundImage);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -229,20 +249,6 @@ a {
   color: #fffaf4;
   cursor: pointer;
   animation-name: chevron-up;
-  animation-duration: 1.6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-     
-}
-.div2 .type article:nth-child(2) i {
-  background-image: var(--backgroundImage);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 40px;
-  margin: 10px;
-  color: #fffaf4;
-  cursor: pointer;
-   animation-name: chevron-up;
   animation-duration: 1.6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
