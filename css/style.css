@@ -1,3 +1,11 @@
+@font-face {
+  font-family: x1;
+  src: url(../font/FredokaOne-Regular.ttf);
+}
+@font-face {
+  font-family: x2;
+  src: url(../font/Tajawal-Light.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +21,11 @@
   --backgroundImage: linear-gradient(to right, #04dabd, #f87f05);
 }
 h1 {
-  font-family: "Fredoka One", cursive;
+  font-family: x1;
 }
-
+p,h3,h2{
+   font-family: x2;
+}
 header {
   width: 100%;
   height: 50vh;
@@ -70,7 +80,6 @@ header section div p {
   color: #ffe38f;
   font-size: 2em;
   margin: 20px;
-  font-family: "Tajawal", sans-serif;
   margin-bottom: 40px;
   font-weight: 600;
 }
@@ -188,7 +197,7 @@ a {
 .div2 .type .container article div:nth-child(1) {
   color: var(--color4);
   display: grid;
-  grid-template-rows: 20% 20% 20% 20%;
+  grid-template-rows: 25% 25% 25% 25%;
   margin: 30px;
   text-align: right;
   justify-content: center;
