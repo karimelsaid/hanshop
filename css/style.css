@@ -136,6 +136,7 @@ a {
 /* !!!!!!!!!!!!!!!!!!!!!!!11 */
 .div2 {
   background-color: #001216;
+      
 }
 .div2 .container {
   padding: 30px;
@@ -146,6 +147,7 @@ a {
   gap: 40px;
   direction: rtl;
   justify-content: center;
+  padding-bottom: 200px;
 }
 .div2 .type {
   width: 300px;
@@ -329,15 +331,87 @@ a {
     width: 250px;
   }
 }
-/* !!!!!!!!!!!!!!!!!! */
-.div-photo {
-  height: 70vh;
-  width: 100%;
-  background-color: #b9c0c1;
-}
 /*!!!!!!!!!!!!!!!!!! */
 .div-footer {
-  height: 50vh;
   width: 100%;
-  background-color: #8bb6bf;
+  height: 30vh;
+  background-color: var(--color2);
+}.div-footer .container{
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+}
+.div-footer .container article:nth-child(1){
+ display: flex;
+ position: relative;
+ overflow-x: clip;
+}
+.div-footer .container article:nth-child(1) div{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--color2);
+ 
+}
+.div-footer .container article:nth-child(1) div:nth-child(1){
+  position: absolute;
+  top: -130px;
+  left: -80px;
+  width: 300px;
+  height: 150px;
+}
+.div-footer .container article:nth-child(1) div:nth-child(2){
+position: absolute;
+  top: -110px;
+  left: 160px;
+  width: 250px;
+  height: 150px;
+}
+.div-footer .container article:nth-child(1) div:nth-child(3){
+position: absolute;
+  top: -160px;
+  left: 340px;
+  width: 250px;
+  height: 190px;
+}
+.div-footer .container article:nth-child(1) div:nth-child(4){
+position: absolute;
+  top: -80px;
+  left: 540px;
+  width: 250px;
+  height: 150px;
+}
+.div-footer .container article:nth-child(1) div:nth-child(5){
+position: absolute;
+  top: -100px;
+  left: 750px;
+  width: 300px;
+  height: 150px;
+}
+.div-footer .container article:nth-child(1) div:nth-child(6){
+  position: absolute;
+  top: -150px;
+  left: 950px;
+  width: 300px;
+  height: 200px;
+}
+.div-footer .container article:nth-child(1) div:nth-child(7){
+ position: absolute;
+  top: -150px;
+  left: 1200px;
+  width: 300px;
+  height: 190px;
+}
+.div-footer .container article:nth-child(2){
+z-index: 1;
+margin: 20px;
+text-align: center;
+}
+.div-footer .container article:nth-child(3){
+z-index: 1;
+margin: 20px;
+text-align: center;
 }
