@@ -6,19 +6,23 @@
   font-family: x2;
   src: url(../font/Tajawal-Light.ttf);
 }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 :root {
-  --color1: #04dabd;
+  --color1: #0c4856;
   --color2: #f87f05;
   --color3: #ffe38f;
   --color4: #f5f5f5;
   --color5: #20ae13;
   --transition: all 0.3s linear;
-  --backgroundImage: linear-gradient(to right, #04dabd, #f87f05);
+  --backgroundImage: linear-gradient(to right, #0c4856, #f87f05);
 }
 h1 {
   font-family: x1;
@@ -53,6 +57,173 @@ h2 span:nth-child(2) {
   font-weight: 100;
   color: var(--color2);
 }
+.ganeb {
+  width: 340px;
+  height: 100%;
+  right: 0px;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+  direction: rtl;
+  transform: translate(120%, 0%);
+  -webkit-transform: translate(120%, 0%);
+  -moz-transform: translate(120%, 0%);
+  -ms-transform: translate(120%, 0%);
+  -o-transform: translate(120%, 0%);
+}
+.ganeb .ganeb1 {
+  width: 340px;
+  height: 100%;
+  background-color: var(--color1);
+  position: fixed;
+  right: 0;
+  z-index: 0;
+}
+.ganeb .ganeb2 {
+  width: 330px;
+  height: 100%;
+  background-color: var(--color2);
+  position: fixed;
+  right: 0;
+  z-index: 2;
+}
+.ganeb .ganeb3 {
+  width: 320px;
+  height: 100%;
+  background-color: #ede9e9;
+  position: fixed;
+  right: 0;
+  z-index: 3;
+  display: grid;
+  grid-template-rows: 50px 50px auto 50px 50px;
+  row-gap: 15px;
+  transform: translate(130%, 0%);
+  -webkit-transform: translate(130%, 0%);
+  -moz-transform: translate(130%, 0%);
+  -ms-transform: translate(130%, 0%);
+  -o-transform: translate(130%, 0%);
+  padding: 1rem 0 1rem 0;
+}
+.ganeb3 div:nth-child(1) i {
+  font-size: 30px;
+  color: red;
+  cursor: pointer;
+}
+.ganeb3 div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  margin: 20px;
+}
+.ganeb3 div:nth-child(2) {
+  display: grid;
+  align-content: space-around;
+}
+.ganeb3 div:nth-child(4) {
+  margin-top: -15px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+}
+.ganeb3 h1:not(.ganeb3 div:nth-child(5) h1, .ganeb3 div:nth-child(4) h1) {
+  background-color: #dbdbdb54;
+  border-bottom: 3px solid #dbdbdb54;
+  display: flex;
+  place-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.ganeb3 div:nth-child(2) h1 {
+  margin-top: 15px;
+}
+.ganeb3 h1,
+.ganeb3 h2,
+.ganeb3 h3,
+.ganeb3 p {
+  padding-right: 40px;
+}
+.ganeb3 h2 {
+  position: relative;
+}
+.ganeb3 h2:not(.logo),
+.ganeb3 h3,
+.ganeb3 p {
+  display: none;
+}
+.ganeb3 h2,
+.ganeb3 h3,
+.ganeb3 p {
+  background-color: #dbdbdb54;
+  border-bottom: 3px solid #dbdbdb54;
+}
+.ganeb3 p {
+  margin-top: -20px;
+}
+.ganeb3 ul {
+  list-style-type: none;
+}
+.ganeb3 a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  margin-top: 5px;
+  font-family: "x2";
+  font-weight: 500;
+  position: relative;
+  display: grid;
+}
+.ganeb3 a:hover {
+  color: var(--color1);
+  font-weight: bold;
+}
+.ganeb3 div:nth-child(2) a:nth-child(1)::before {
+  content: "\f007";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 3px;
+  right: -25px;
+}
+.ganeb3 div:nth-child(2) a:nth-child(2)::before {
+  content: "\f2bd";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 3px;
+  right: -25px;
+}
+.ganeb3 div:nth-child(3) h1::before {
+  content: "\2b";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  left: calc(1rem + 25px);
+  font-size: 18px;
+}
+.ganeb3 div:nth-child(3) h2::before {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+.ganeb3 div:nth-child(3) a:nth-child(1):before {
+  font-family: "Font Awesome 6 Free";
+  content: "\3f";
+  position: absolute;
+  top: 3px;
+  right: -20px;
+}
+.ganeb3 div:nth-child(3) a:nth-child(2):before {
+  font-family: "Font Awesome 6 Free";
+  content: "\40";
+  position: absolute;
+  top: 3px;
+  right: -25px;
+}
+.ganeb3 .xx {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -68,21 +239,16 @@ header section {
   margin-left: 10%;
   margin-right: 10%;
 }
-.inputSearsh {
-  width: 387px;
-  height: 30px;
-  border-radius: 20px;
-  border: none;
-}
-header section article:nth-child(2)::before {
-  content: "\f002";
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-}
 header section article:nth-child(3) {
   width: 30px;
   margin-left: auto;
-  margin-left: 50px;
+  cursor: pointer;
+}
+header section article:nth-child(4) {
+  width: 400px;
+  height: 100%;
+  background-color: #001216;
+  position: absolute;
 }
 header section article:nth-child(3) div {
   margin: 5px;
@@ -119,7 +285,7 @@ header section article:nth-child(3) div {
 }
 .section1 section div:nth-child(1) {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -150,7 +316,7 @@ header section article:nth-child(3) div {
   margin-bottom: 40px;
   font-weight: 600;
 }
-a {
+.type a {
   font-size: 1.2em;
   padding: 10px 30px;
   border-radius: 35px;
@@ -220,7 +386,7 @@ a {
   border: 3px solid transparent;
   border-radius: 20px;
   background: linear-gradient(white, #ffffff) padding-box,
-    linear-gradient(to right, #04dabd, #f87f05) border-box;
+    linear-gradient(to right, var(--color1), var(--color2)) border-box;
   box-shadow: 5px 5px 40px black;
 }
 .div2 .type .container {
@@ -486,5 +652,5 @@ a {
   .div-footer .container article:nth-child(1) a {
     font-size: 20px;
     margin: 8px;
-}
+  }
 }
