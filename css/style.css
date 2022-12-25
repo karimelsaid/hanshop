@@ -146,11 +146,10 @@ h2 span:nth-child(2) {
 .ganeb3 h2 {
   position: relative;
 }
-.ganeb3 h1, h2:not(.logo),
+.ganeb3  h2:not(.logo),
 .ganeb3 h3,
 .ganeb3 p {
   display: none;
-  padding: 10px;
 }
 .ganeb3 h2,
 .ganeb3 h3,
@@ -172,8 +171,12 @@ h2 span:nth-child(2) {
   position: relative;
   display: grid;
 }
+.ganeb3 a {
+  color: #de9204eb;
+  font-weight: bold;
+}
 .ganeb3 a:hover {
-  color: var(--color1);
+  color: var(--color2);
   font-weight: bold;
 }
 .ganeb3 div:nth-child(2) a:nth-child(1)::before {
@@ -192,21 +195,6 @@ h2 span:nth-child(2) {
   right: -35px;
    color: var(--color1);
 }
-.ganeb3 .plass {
-  width: 15px;
-  padding: 10px;
-  position: absolute;
-  left: 10px;
-}
-.ganeb3 .plass .line {
-  width: 80%;
-  height: 2px;
-  position: absolute;
-  background-color: black;
-}
-.ganeb3 .plass #line1 {
-  transform: rotate(90deg);
-}
 .ganeb3 div:nth-child(3) a:nth-child(1):before {
   font-family: "Font Awesome 6 Free";
   content: "\f0eb";
@@ -223,10 +211,13 @@ h2 span:nth-child(2) {
   right: -29px;
   color: var(--color1);
 }
-.ganeb3 .xx {
-  margin-top: 10px;
-  margin-bottom: 20px;
+.ganeb3 h1{
+  color: var(--color1);
 }
+.ganeb3 div:nth-child(3) h2{
+  color: var(--color2);
+}
+
 .input1 {
   position: absolute;
   width: 100%;
@@ -305,9 +296,6 @@ ul li i:before, ul li i:after{
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
 }
-.abut-p{
- 
-} 
 
 header {
   position: fixed;
