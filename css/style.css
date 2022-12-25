@@ -146,10 +146,11 @@ h2 span:nth-child(2) {
 .ganeb3 h2 {
   position: relative;
 }
-.ganeb3 h2:not(.logo),
+.ganeb3 h1, h2:not(.logo),
 .ganeb3 h3,
 .ganeb3 p {
   display: none;
+  padding: 10px;
 }
 .ganeb3 h2,
 .ganeb3 h3,
@@ -176,18 +177,20 @@ h2 span:nth-child(2) {
   font-weight: bold;
 }
 .ganeb3 div:nth-child(2) a:nth-child(1)::before {
-  content: "\f090";
+  content: "\f2bd";
   font-family: FontAwesome;
   position: absolute;
   top: 3px;
-  right: -33px;
+  right: -29px;
+   color: var(--color1);
 }
 .ganeb3 div:nth-child(2) a:nth-child(2)::before {
-  content: "\f007";
+  content: "\f234";
   font-family: FontAwesome;
   position: absolute;
   top: 3px;
-  right: -25px;
+  right: -35px;
+   color: var(--color1);
 }
 .ganeb3 .plass {
   width: 15px;
@@ -203,24 +206,22 @@ h2 span:nth-child(2) {
 }
 .ganeb3 .plass #line1 {
   transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
 }
 .ganeb3 div:nth-child(3) a:nth-child(1):before {
   font-family: "Font Awesome 6 Free";
-  content: "\3f";
-  position: absolute;
-  top: 3px;
-  right: -20px;
-}
-.ganeb3 div:nth-child(3) a:nth-child(2):before {
-  font-family: "Font Awesome 6 Free";
-  content: "\40";
+  content: "\f0eb";
   position: absolute;
   top: 3px;
   right: -25px;
+   color: var(--color1);
+}
+.ganeb3 div:nth-child(3) a:nth-child(2):before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f27a";
+  position: absolute;
+  top: 3px;
+  right: -29px;
+  color: var(--color1);
 }
 .ganeb3 .xx {
   margin-top: 10px;
