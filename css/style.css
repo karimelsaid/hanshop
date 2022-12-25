@@ -146,7 +146,7 @@ h2 span:nth-child(2) {
 .ganeb3 h2 {
   position: relative;
 }
-.ganeb3  h2:not(.logo),
+.ganeb3 h2:not(.logo),
 .ganeb3 h3,
 .ganeb3 p {
   display: none;
@@ -185,7 +185,7 @@ h2 span:nth-child(2) {
   position: absolute;
   top: 3px;
   right: -29px;
-   color: var(--color1);
+  color: var(--color1);
 }
 .ganeb3 div:nth-child(2) a:nth-child(2)::before {
   content: "\f234";
@@ -193,7 +193,7 @@ h2 span:nth-child(2) {
   position: absolute;
   top: 3px;
   right: -35px;
-   color: var(--color1);
+  color: var(--color1);
 }
 .ganeb3 div:nth-child(3) a:nth-child(1):before {
   font-family: "Font Awesome 6 Free";
@@ -201,7 +201,7 @@ h2 span:nth-child(2) {
   position: absolute;
   top: 3px;
   right: -25px;
-   color: var(--color1);
+  color: var(--color1);
 }
 .ganeb3 div:nth-child(3) a:nth-child(2):before {
   font-family: "Font Awesome 6 Free";
@@ -211,10 +211,10 @@ h2 span:nth-child(2) {
   right: -29px;
   color: var(--color1);
 }
-.ganeb3 h1{
+.ganeb3 h1 {
   color: var(--color1);
 }
-.ganeb3 div:nth-child(3) h2{
+.ganeb3 div:nth-child(3) h2 {
   color: var(--color2);
 }
 
@@ -261,7 +261,8 @@ h2 i::before {
   height: 15px;
   background-color: var(--color1);
 }
-h1 i::after,h1 i::before {
+h1 i::after,
+h1 i::before {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -289,7 +290,8 @@ h2 i {
   left: 10%;
   top: 30%;
 }
-ul li i:before, ul li i:after{
+ul li i:before,
+ul li i:after {
   transition: all 0.15s ease-in-out;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
