@@ -57,7 +57,7 @@ h2 span:nth-child(2) {
   font-weight: 100;
   color: var(--color2);
 }
-.ganeb  {
+.ganeb {
   width: 340px;
   height: 100%;
   right: 0px;
@@ -132,6 +132,7 @@ h2 span:nth-child(2) {
   place-items: center;
   cursor: pointer;
   margin-top: 20px;
+  position: relative;
 }
 .ganeb3 div:nth-child(2) h1 {
   margin-top: 15px;
@@ -156,9 +157,6 @@ h2 span:nth-child(2) {
   background-color: #dbdbdb54;
   border-bottom: 3px solid #dbdbdb54;
 }
-.ganeb3 p {
-  margin-top: -20px;
-}
 .ganeb3 ul {
   list-style-type: none;
 }
@@ -178,32 +176,37 @@ h2 span:nth-child(2) {
   font-weight: bold;
 }
 .ganeb3 div:nth-child(2) a:nth-child(1)::before {
-  content: "\f007";
-  font-family: "Font Awesome 6 Free";
+  content: "\f090";
+  font-family: FontAwesome;
   position: absolute;
   top: 3px;
-  right: -25px;
+  right: -33px;
 }
 .ganeb3 div:nth-child(2) a:nth-child(2)::before {
-  content: "\f2bd";
-  font-family: "Font Awesome 6 Free";
+  content: "\f007";
+  font-family: FontAwesome;
   position: absolute;
   top: 3px;
   right: -25px;
 }
-.ganeb3 div:nth-child(3) h1::before {
-  content: "\2b";
-  font-family: "Font Awesome 6 Free";
+.ganeb3 .plass {
+  width: 15px;
+  padding: 10px;
   position: absolute;
-  left: calc(1rem + 25px);
-  font-size: 18px;
+  left: 10px;
 }
-.ganeb3 div:nth-child(3) h2::before {
-  content: "\f078";
-  font-family: "Font Awesome 6 Free";
+.ganeb3 .plass .line {
+  width: 80%;
+  height: 2px;
   position: absolute;
-  top: 3px;
-  right: 10px;
+  background-color: black;
+}
+.ganeb3 .plass #line1 {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 .ganeb3 div:nth-child(3) a:nth-child(1):before {
   font-family: "Font Awesome 6 Free";
@@ -223,6 +226,87 @@ h2 span:nth-child(2) {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.input1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.input1:checked ~ i::before {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.input2:checked ~ i::after {
+  transform: translate(4px, 0) rotate(45deg);
+  -webkit-transform: translate(4px, 0) rotate(45deg);
+  -moz-transform: translate(4px, 0) rotate(45deg);
+  -ms-transform: translate(4px, 0) rotate(45deg);
+  -o-transform: translate(4px, 0) rotate(45deg);
+}
+.input2:checked ~ i::before {
+  transform: translate(-4px, 0) rotate(-45deg);
+}
+.input2 {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+h1 i::after,
+h1 i::before,
+h2 i::after,
+h2 i::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 15px;
+  background-color: var(--color1);
+}
+h1 i::after,h1 i::before {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+h2 i::after {
+  transform: translate(4px, 0) rotate(-45deg);
+  -webkit-transform: translate(4px, 0) rotate(-45deg);
+  -moz-transform: translate(4px, 0) rotate(-45deg);
+  -ms-transform: translate(4px, 0) rotate(-45deg);
+  -o-transform: translate(4px, 0) rotate(-45deg);
+}
+h2 i::before {
+  transform: translate(-4px, 0) rotate(45deg);
+  -webkit-transform: translate(-4px, 0) rotate(45deg);
+  -moz-transform: translate(-4px, 0) rotate(45deg);
+  -ms-transform: translate(-4px, 0) rotate(45deg);
+  -o-transform: translate(-4px, 0) rotate(45deg);
+}
+h1 i,
+h2 i {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+ul li i:before, ul li i:after{
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+.abut-p{
+ 
+} 
 
 header {
   position: fixed;
