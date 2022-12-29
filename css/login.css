@@ -184,7 +184,7 @@ label {
   order: 5;
 }
 input:not(.login) {
-  background-color: #a4a1a64a;
+  background-color: #801bc34a;
 }
 input {
   outline: none;
@@ -201,7 +201,7 @@ input {
 }
 @media (max-width: 280px) {
   input {
-    width: 90%;
+    width: 230px;
   }
 }
 
