@@ -125,22 +125,6 @@ h1 {
   margin: 30px 0px 20px 0px;
   font-size: 30px;
 }
-@media (max-width:280px) {
-  h1{
-    width: 80%;
-  }
-  input{
-    width: 80%;
-   
-  }
-  label{
-    width: 80%;
-  }
-  .btn{
-    width: 80%;
-    
-  }
-}
 form {
   display: grid;
   grid-template-rows: 40px 40px 40px 40px 70px;
