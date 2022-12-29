@@ -128,15 +128,21 @@ h1 {
 @media (max-width:290px) {
   h1{
     width: 95%;
+    display: flex;
+    justify-content: center;
   }
   input{
     width: 95%;
+     display: flex;
+    justify-content: center;
   }
   label{
     width: 95%;
   }
   .btn{
     width: 95%;
+     display: flex;
+    justify-content: center;
   }
 }
 form {
