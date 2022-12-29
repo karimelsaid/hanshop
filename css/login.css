@@ -216,7 +216,7 @@ input:focus + label {
   justify-content: space-between;
 }
 @media (max-width: 280px) {
-  input {
+  .btn {
     width: 90%;
   }
 }
