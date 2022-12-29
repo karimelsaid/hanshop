@@ -127,10 +127,16 @@ h1 {
 }
 @media (max-width:290px) {
   h1{
-    width: 100%;
+    width: 95%;
   }
   input{
-    width: 100%;
+    width: 95%;
+  }
+  label{
+    width: 95%;
+  }
+  .btn{
+    width: 95%;
   }
 }
 form {
