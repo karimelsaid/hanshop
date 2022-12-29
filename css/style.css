@@ -181,7 +181,7 @@ h2 span:nth-child(2) {
 }
 .ganeb3 div:nth-child(2) a:nth-child(1)::before {
   content: "\f2bd";
-  font-family: FontAwesome;
+
   position: absolute;
   top: 3px;
   right: -29px;
