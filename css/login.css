@@ -111,7 +111,7 @@ form {
   font-weight: bold;
   padding: 0;
   cursor: pointer;
-  background-image: linear-gradient(120deg, rgb(188, 63, 1), rgb(34, 130, 199));
+  background-image: linear-gradient(120deg, rgb(1, 35, 188), rgb(34, 130, 199));
 }
 section article:nth-child(1) {
   height: 100%;
@@ -155,8 +155,7 @@ input {
   padding: 20px;
   font-size: 20px;
   color: aliceblue;
-}
-@media (max-width: 290px) {
+}@media (max-width: 290px) {
   input {
     padding: 10px;
     font-size: 15px;
